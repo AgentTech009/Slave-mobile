@@ -3,8 +3,11 @@ from discord.ext import commands
 import os
 import asyncio
 import traceback
+from dotenv import load_dotenv
 
-GUILD_ID = 1496826379809853563  # replace with your server ID
+load_dotenv()
+
+GUILD_ID = 1496826379809853563
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -67,7 +70,7 @@ async def main():
     token = get_token()
 
     if not token:
-        print("TOKEN environment variable missing.")
+        print("TOKEN missing. Add it inside .env")
         return
 
     async with bot:
