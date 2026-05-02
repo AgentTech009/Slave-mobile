@@ -2,7 +2,7 @@ from discord.ext import commands
 import random
 import asyncio
 
-SIMON_CHANNEL_ID = 1500168695669067961  # your channel
+SIMON_CHANNEL_ID = 1500168505184485577  # your channel
 
 ROUNDS = 15
 ANSWER_TIME = 7
